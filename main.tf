@@ -4,7 +4,7 @@ module "s3-bucket" {
 
   bucket     = var.bucket
   tags       = var.tags
-  versioning = var.lifecycle_rule
+  versioning = var.versioning
   server_side_encryption_configuration = {
     rule = {
       apply_server_side_encryption_by_default = {

@@ -13,7 +13,9 @@ variable "tags" {
 variable "versioning" {
   description = "Map containing versioning configuration."
   type        = map(string)
-  default     = {}
+  default = {
+    status = true
+  }
 }
 
 variable "logging" {

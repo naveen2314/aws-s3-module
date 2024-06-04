@@ -2,7 +2,7 @@ module "s3-bucket" {
   source  = "terraform-aws-modules/s3-bucket/aws"
   version = "4.1.2"
 
-  bucket     = var.create_bucket
+  bucket     = var.bucket
   tags       = var.tags
   versioning = var.lifecycle_rule
   server_side_encryption_configuration = {

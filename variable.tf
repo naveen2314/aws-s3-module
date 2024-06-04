@@ -1,7 +1,7 @@
-variable "create_bucket" {
+variable "bucket" {
   description = "Controls if S3 bucket should be created"
-  type        = bool
-  default     = true
+  type        = string
+  default     = ""
 }
 
 variable "tags" {

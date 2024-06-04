@@ -18,8 +18,13 @@ variable "versioning" {
 
 variable "logging" {
   description = "Map containing access bucket logging configuration."
-  type        = any
-  default     = {}
+  type        = map(any)
+  default = {
+    target_bucket  = ""
+    target_prefix  = ""
+    logging_bucket = ""
+
+  }
 }
 
 variable "lifecycle_rule" {
